@@ -5,11 +5,11 @@
 
 ### 1. Description
 
-Farmer John wants his cows to help him make a lake. He has mapped the pasture where he wants to build the lake by creating an R (3 <= R <= 100) row by C (3 <= C <= 100) column grid of six foot by six foot squares and then by determining the average elevation (10 <= elev_rc <= 5000) in inches for each square.
+Farmer John wants his cows to help him make a lake. He has mapped the pasture where he wants to build the lake by creating an $R$ ($3 \le R \le 100$) row by $C$ ($3 \le C \le 100$) column grid of six foot by six foot squares and then by determining the average elevation ($10 \le elev_{rc} \le 5000$) in inches for each square.
 
-Additionally, he has trained the cows in "stomp digging". The burly bovines travel in a herd that just exactly covers a 3x3 grid of squares to a grid whose upper left coordinate is R_s,C_s (1 <= R_s <= R-2; 1 <= C_s <= C-2). The cows then stomp the ground to push it down D_s (1 <= D_s <= 40) inches. The cows are quite meticulous; the cows at lower elevations will not commence stomping until the rest of the herd has joined them. Thus, not all the 3x3 grid is necessarily stomped (or perhaps some part is stomped less than some other part).
+Additionally, he has trained the cows in "stomp digging". The burly bovines travel in a herd that just exactly covers a 3x3 grid of squares to a grid whose upper left coordinate is $R_s$,$C_s$ ($1 \le R_s \le R-2$; $1 \le C_s \le C-2$). The cows then stomp the ground to push it down $D_s$ ($1 \le D_s \le 40$) inches. The cows are quite meticulous; the cows at lower elevations will not commence stomping until the rest of the herd has joined them. Thus, not all the 3x3 grid is necessarily stomped (or perhaps some part is stomped less than some other part).
 
-Given an initial set of elevations, an ordered set of N (1 <= N <= 20000) stomp digging instructions, and an elevation E (0 <= E <= 5000) for the lake's final water level, determine the volume of water (in cubic inches) that the lake will hold. It is guaranteed that the answer will not exceed 2,000,000,000. Presume that the edge of the lake contains barriers so that water can not spill over the border.
+Given an initial set of elevations, an ordered set of $N$ ($1 \le N \le 20000$) stomp digging instructions, and an elevation $E$ ($0 \le E \le 5000$) for the lake's final water level, determine the volume of water (in cubic inches) that the lake will hold. It is guaranteed that the answer will not exceed 2,000,000,000. Presume that the edge of the lake contains barriers so that water can not spill over the border.
 
 ### 2 Example walkthrough
 
@@ -75,11 +75,11 @@ INPUT FORMAT:
 
 The name of a file with the following format:
 
-* Line 1: Four space-separated integers: R, C, E, N
+* Line 1: Four space-separated integers: $R$, $C$, $E$, $N$
 
-* Lines 2..R+1: Line i+1 describes row of squares i with C space-separated integers
+* Lines 2..$R+1$: Line $i+1$ describes row of squares $i$ with $C$ space-separated integers
 
-* Lines R+2..R+N+1: Line i+R+1 describes stomp-digging instruction i with three integers: R_s, C_s, and D_s
+* Lines $R+2$..$R+N+1$: Line i+R+1 describes stomp-digging instruction i with three integers: $R_s$, $C_s$, and $D_s$
 
 **SAMPLE INPUT (file makelake.in):**
 
