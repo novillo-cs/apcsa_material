@@ -1,56 +1,96 @@
-public class MyHeap{
-        private int[] heap;
-        private int size;
-        private int maxsize;
-        private boolean isMaxHeap;
+import java.util.Arrays;
 
-        public MyHeap(int numElements, boolean isMax) {
-             maxsize = numElements;
-             size = 0;
-             heap = new int[maxsize];
-             isMaxHeap = isMax;
-          }
+public class MyHeap {
+    private int[] heap;
+    private int size;
+    private int maxsize;
+    private boolean isMaxHeap;
 
-        private int parent(int pos) {
-            // RETURN POSTION PARENT
-            return 0;
+    public MyHeap(int numElements, boolean isMax) {
+        maxsize = numElements;
+        size = 0;
+        heap = new int[maxsize];
+        isMaxHeap = isMax;
+    }
+
+    private int parent(int pos) {
+        return (pos - 1) / 2;
+    }
+
+    private int leftChild(int pos) {
+        return (2 * pos) + 1;
+    }
+
+    private int rightChild(int pos) {
+        return (2 * pos) + 2;
+    }
+
+    private void swap(int idx1, int idx2) {
+        int temp = heap[idx1];
+        heap[idx1] = heap[idx2];
+        heap[idx2] = temp;
+    }
+
+    private void downHeapify(int pos) {
+        int left = leftChild(pos);
+        int right = rightChild(pos);
+        int largest = pos;
+
+        if (left < size && compare(heap[left], heap[largest])) {
+            largest = left;
         }
 
-        private int leftChild(int pos) {
-            // RETURN POSITION LEFTCHILD
-            return 0 ;
+        if (right < size && compare(heap[right], heap[largest])) {
+            largest = right;
         }
-        
-        private int rightChild(int pos) {
-            // RETURN POSITION RIGHTCHILD
-            return 0 ;
+        if (largest != pos) {
+            swap(pos, largest);
+            downHeapify(largest);
         }
-        
-        private void swap(int idx1, int idx2) {
-                // YOUR CODE HERE
-        }
-        
+    }
 
-        private void downHeapify(int pos) {
-                // YOUR CODE HERE
+    private void heapifyUp(int pos) {
+        int current = pos;
+        while (current > 0 && compare(heap[current], heap[parent(current)])) {
+            swap(current, parent(current));
+            current = parent(current);
         }
-        
-        private void heapifyUp(int pos) {
-                // YOUR CODE HERE
-        }
+    }
 
-        public void insert(int element) {
-                // YOUR CODE HERE
-
+    private boolean compare(int a, int b) {
+        if (isMaxHeap) {
+            return a > b;
+        } 
+        else {
+            return a < b;
         }
 
-        public void print() {
-                // YOUR CODE HERE
-        }
+    }
 
-        public int deleteRoot() {
-           // YOUR CODE HERE
-            return 0;
+    public void insert(int element) {
+        if (size >= maxsize) {
+            System.out.println("Heap is full. Can't insert more elements.");
+            return;
         }
+        heap[size] = element;
+        size++;
+        heapifyUp(size - 1);
+    }
 
+    public void print() {
+        int[] output = Arrays.copyOf(heap, size);
+        System.out.println(Arrays.toString(output));
+    }
+
+    public int deleteRoot() {
+        if (size == 0) {
+            System.out.println("Heap is empty. Can't delete root.");
+            return -1;
+        }
+        int root = heap[0];
+        heap[0] = heap[size - 1];
+        size--;
+        downHeapify(0);
+        return root;
+    }
 }
