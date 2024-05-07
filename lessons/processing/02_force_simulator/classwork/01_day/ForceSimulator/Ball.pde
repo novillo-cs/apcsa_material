@@ -14,6 +14,8 @@ class Ball{
   void move(){
     //change the x based on the xVel
     //change the y based on the yVel
+x += xVel
+y += yVel
   }
 
   void bounce(){
@@ -25,6 +27,8 @@ class Ball{
     // Draw a circle at the x, y position
     // Make width and height = 50
     // Make sure it is the correct color
+circle (x, y, 50);
+fill(c);
   }
   
 }
