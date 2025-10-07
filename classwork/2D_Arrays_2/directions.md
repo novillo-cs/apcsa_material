@@ -1,5 +1,7 @@
 ## Methods 2D Arrays
 
+- Save your Java files here: ```.../APCSA1/apcsa-assignments-YourUsername/classwork/10_07_2D_arrays/```
+
 - Create test cases in the main method to test the methods that you will implement.
   
 - Include more than 1 test case for each method. Include different types of arrays, such as rectangular arrays, ragged arrays, empty arrays, etc.
