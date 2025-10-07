@@ -3,7 +3,7 @@ public class TwoDArrayPractice
 
   public static void main(String[] args)
     {
-      // Create test cases here.
+      // Create tgggest cases here.
       
       // Print the status of your 2D array before and after
       // invoking a method. You will need to add a print() method
