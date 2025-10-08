@@ -23,16 +23,14 @@ public class TwoDArrays{
         return 0;
     }
 
-    /* The last element in each array in a 2D array is incorrect.
-       Fix the last element of each row in the 2D array as follows:
-       1st row, last col = number of rows
-       2nd row, last col = total number of elements in the array
-       3rd row, last col = sum of values in first and last rows in the 2D array
+    /* The last element in row is incorrect.
+       Fix the last column in row as follows:
+       If row = 0, last col = number of rows
+       If row = 1, last col = total number of elements in the array
+       If row = 2, last col = sum of values in first and last rows in the 2D array
        Other rows, last col = 0
-       Use updateValue(int[][] array, int row, int col, int value) to set each value.
-       Call updateValue three times (once for each fix).
-       Precondition: arr.length >= 3, row and col are valid indixes */
-     public static void updateValue(int[][] arr, int row, int value) {
+       Precondition: arr.length >= 3, row is a valid indix */
+     public static void updateLastCol(int[][] arr, int row) {
     
      }
     
