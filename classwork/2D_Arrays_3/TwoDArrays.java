@@ -10,12 +10,19 @@ public class TwoDArrays{
 
     // Returns the sum of all elements in a specific row
     public static int sumMatrix(int[][] matrix, int row) {
-        return 0;
+        int count = 0;
+        for (int i = 0; i < matrix.length; i++)
+            {if (matrix[][] == matrix[i][row])
+            {count  = count + matrix[i][row];}}
+        return count;
     }
 
     // Returns the sum of all elements between rowStart and rowEnd (inclusive).
     public static int sumMatrix(int[][] matrix, int rowStart, int rowEnd){
-         return 0;
+        int count = 0;
+        for (int i = 0; i >= rowStart && i <= rowEnd; i++)
+            {count = count + matrix[i][]}
+         return count;
     }
 
     // Return how many elements are zero in the 2D array
