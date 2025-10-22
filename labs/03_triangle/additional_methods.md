@@ -28,13 +28,13 @@ Even though the object moved “5.0 units,” the computer’s math introduces t
 
 To handle this, we can write a method that checks if two doubles are close enough instead of exactly equal:
 
-public static boolean closeEnough(double a, double b)
+`public static boolean closeEnough(double a, double b)`
 
-Disscuss with your neighboor:
+### Disscuss with your neighbor:
 
 1. How can you determine if two values are close enough to each other?
 2. What would you do to compare them?
-3. How could a simplistic method fail to work on 0.00000001 vs 0.00000003, where one value is 3× the other (thus NOT close enough)?
+3. How could a simplistic method fail to work on `0.00000001` vs `0.00000003`, where one value is 3× the other (thus NOT close enough)?
 
 ## New methods in Point class
 
