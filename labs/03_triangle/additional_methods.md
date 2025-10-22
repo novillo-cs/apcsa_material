@@ -9,15 +9,17 @@ For example:
 
 | Comparison               | What you might *expect* | What actually happens |
 | ------------------------ | ----------------------- | --------------------- |
-| `10.0` vs `9.99999`      | equal                   | false                 |
-| `100.0` vs `99.99999`    | not equal               | false                 |
-| `0.001` vs `0.000999999` | equal                   | false                 |
+| `10.0` == `9.99999`      | equal                   | false                 |
+| `100.0`== `99.99999`    | not equal               | false                  |
+| `0.001` == `0.000999999` | equal                   | false                 |
+| `0.0003` == `0.0001 + 0.0001 + 0.0001` | equal    | false                  |
 
-So we can’t safely use == to compare doubles.
+So we can’t use == to compare doubles.
 
-Example: Measuring the Distance Between Points
+**Example:** Measuring the Distance Between Points
 
 Imagine you’re running a physics simulation and need to measure how far a moving object has traveled.
+
 You expect the object to move exactly 5.0 units, but when you compute the distance, you might get something like 4.999999999 or 5.000000002.
 
 Even though the object moved “5.0 units,” the computer’s math introduces tiny rounding errors, causing the result to differ slightly.
