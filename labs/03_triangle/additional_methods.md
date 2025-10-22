@@ -33,8 +33,8 @@ To handle this, we can write a method that checks if two doubles are close enoug
 ### Disscuss with your neighbor:
 
 1. How can you determine if two values are close enough to each other?
-2. What would you do to compare them?
-3. How could a simplistic method fail to work on `0.00000001` vs `0.00000003`, where one value is 3× the other (thus NOT close enough)?
+2. What would you do to compare them? Should it depend on a fixed tolerance (absolute difference)?
+3. How could a simplistic method (absolute difference) fail to work on `0.00000001` vs `0.00000003`, where one value is 3× the other (thus NOT close enough)?
 
 ## New methods in Point class
 
