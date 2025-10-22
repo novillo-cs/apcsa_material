@@ -48,7 +48,7 @@ To handle this, we can write a method that checks if two doubles are close enoug
 - A point is equal to another one when the values x and y are close to each other. Use method isClose to determine if values are close.
 
  ```
-public boolean isEqual(Point other){
+public boolean equals(Point other){
    return false;
  }
 ```
