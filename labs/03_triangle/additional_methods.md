@@ -37,7 +37,7 @@ To handle this, we can write a method that checks if two doubles are close enoug
 
 ## New methods in Point class
 
-- Check if the coordinate values are equal. We have learned that data precision can be a problem with double values. The following method should return true when a is equal to b or when the difference between them is not greater than 0.001%. Otherwise, return false. 
+- Check if the coordinate values are equal. We have learned that data precision can be a problem with double values. The following method should return true when a is equal to b or when the difference between them is not greater than 0.001. Otherwise, return false. 
 
 ```
  public static boolean closeEnough(ddouble a, double b){
@@ -45,7 +45,7 @@ To handle this, we can write a method that checks if two doubles are close enoug
  }
 ```
 
-- A point is equal to another one when the values x and y are close to each other. Use method isClose to determine if values are close.
+- A point is equal to another one when the values x and y are close to each other. Use method closeEnough to determine if values are close.
 
  ```
 public boolean equals(Point other){
