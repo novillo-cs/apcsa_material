@@ -10,7 +10,6 @@ For example:
 | Comparison               | What you might *expect* | What actually happens |
 | ------------------------ | ----------------------- | --------------------- |
 | `10.0` == `9.99999`      | equal                   | false                 |
-| `100.0`== `99.99999`    | not equal               | false                  |
 | `0.001` == `0.000999999` | equal                   | false                 |
 | `0.0003` == `0.0001 + 0.0001 + 0.0001` | equal    | false                  |
 
