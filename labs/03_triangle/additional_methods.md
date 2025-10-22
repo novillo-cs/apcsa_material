@@ -81,7 +81,7 @@ public String getTriangleType(){
  Area = √[s(s-a)(s-b)(s-c)]
 ```
 
-  "s" is the semi-perimeter of the triangle, i.e., s = (a + b + c)/2.
+  "s" is the semi-perimeter of the triangle, i.e., `s = (a + b + c)/2`.
 
   "a", "b", and "c" are the three sides of a triangle.
 
