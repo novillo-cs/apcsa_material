@@ -68,3 +68,7 @@ It removes the element at the specified index. Shift all elements to the left to
 ### public boolean remove(String target)
 
 It removes the leftmost element that has the same value as the target string. Shift all elements to the right of that index to the left to fill in the gap. Return true if the element was present and removed, false if it was not found. 
+
+<img width="419" height="666" alt="image" src="https://github.com/user-attachments/assets/7d78196a-ddb1-4542-99ea-a18fe7464803" />
+
+
