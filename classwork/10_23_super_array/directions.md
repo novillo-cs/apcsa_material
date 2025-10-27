@@ -69,6 +69,27 @@ It removes the element at the specified index. Shift all elements to the left to
 
 It removes the leftmost element that has the same value as the target string. Shift all elements to the right of that index to the left to fill in the gap. Return true if the element was present and removed, false if it was not found. 
 
+### private void resize()
+
+Notice, it is a private method.
+
+It will increase the capacity by making a new Array that has a new capacity of 2*length+1, then copy the old values, and set the data field to this new array.
+
+Test it and then modify the add methods. The add methods must call this before you add to a list that is at capacity.
+
+### indexOf(String target)
+
+It returns the smallest index where the value in the SuperArray matches the target string. Return -1 when no value matches. Assume the target String is not null. 
+
+### public int lastIndexOf(String target)
+
+It returns the largest index where the value in the SuperArray matches the target string. Return -1 when no value matches. You may assume the target String is not null.
+
+### public void add(int index,String value)
+
+It adds the String to the target index. Values at that index and to the right of it must be shifted to the right to make room. Print an error when the index is out of range index is negative or index is larger than size().
+
+
 <img width="419" height="666" alt="image" src="https://github.com/user-attachments/assets/7d78196a-ddb1-4542-99ea-a18fe7464803" />
 
 
