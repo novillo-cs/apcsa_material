@@ -1,6 +1,6 @@
 ## Wrapper Classes
 
-Create a folder 11_3_wrapper_classes in your classwork folder.
+Create a folder 11_03_wrapper_classes in your classwork folder.
 
 ### Currency
 
