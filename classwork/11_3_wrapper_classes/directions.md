@@ -1,5 +1,7 @@
 ## Wrapper Classes
 
+Create a folder 11_3_wrapper_classes in your classwork folder.
+
 ### Currency
 
 Fill in the Currency class using the method comments as a guide.
