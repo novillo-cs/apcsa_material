@@ -13,7 +13,7 @@ A Driver is not needed. You may write the main method in ArrayListPractice.java
 1. Return the sum of all the numbers at even positions in the array list.
 
 ```
-public int listSumEvenIndexes(ArrayList<Integer> numsList) {     
+public static int listSumEvenIndexes(ArrayList<Integer> numsList) {     
   
 }
 ```
@@ -29,7 +29,7 @@ listSumEvenIndexes([5, 0, -10]) → -5
 2. An array list contains a list of animals. If the animal is a cat (i.e. the animal's description contains the word "cat" or "Cat"), then add it to a new array list. Return the new array list of cats.
 
 ```
-public ArrayList<String> listCatty(ArrayList<String> animalsList) {    
+public static ArrayList<String> listCatty(ArrayList<String> animalsList) {    
   
 }
 ```
@@ -45,7 +45,7 @@ listCatty(["Cat", "frog", "mouse"]) → ["Cat"]
 3. Return the sum of the numbers in the array list that are odd and have an even index, or the number is even and its index is odd.
 
 ```
-public int listFairlyOddNums(ArrayList<Integer> numsList) { 
+public static int listFairlyOddNums(ArrayList<Integer> numsList) { 
   
 }
 ```
