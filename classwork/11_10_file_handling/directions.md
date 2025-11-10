@@ -1,6 +1,6 @@
 # Directions
 
-Save the following files here: .../APCSA_1/apcsa-assignments-YourUsername/homework/19_handling_files/
+Save the following files here: .../APCSA_1/apcsa-assignments-fall-YourUsername/homework/11_10_file_handling/
 
 ## Longest Word
 
