@@ -2,6 +2,8 @@
 
 Save here: ```.../APCSA1/apcsa-assignments-fall-YourUsername/classwork/11_12_count_triangles/```
 
+You may create one Java files with 2 functions (part 1 and part 2).
+
 ## Part 1
 
 The file "input.txt" gives triangles side lengths, one triangle per line. Some values do not make a triangle.
