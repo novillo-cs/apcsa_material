@@ -1,6 +1,6 @@
 ## Numbers Inheritance
 
-Save here: `.../APCSA_1/apcsa-assignments-YourUsername/classwork/23_inheritance_numbers/`
+Save here: `.../APCSA1/apcsa-assignments-fall-YourUsername/classwork/11_19_inheritance_numbers/`
 
 Classes to be implemented:
 
