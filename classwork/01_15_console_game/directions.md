@@ -51,7 +51,9 @@ Are we going to use the superclass to instantiate objects?
 
 * Look at the sample subclass MyWarrior and compare it to your subclass. What is different? What is the same?
 
-* How your game will interact with the user? 
+* How your game will interact with the user?
+  
+* Use ANSI codes to change terminal font colors.
 
 #### Game requirements:
 
