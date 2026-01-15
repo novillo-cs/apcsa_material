@@ -52,7 +52,7 @@ For example, a red letter is [31m, so a red background is [41m.
 
 ## Others ANSI codes
 
-Reset screen back to normal: "\u001b[0m"
+Reset screen back to normal: ```"\u001b[0m"```
 
 You can also bold and underline text, using [1m for bold, [4m for underline, and [7m for “inverse” text (switch foreground and background colors).
 
