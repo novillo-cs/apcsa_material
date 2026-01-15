@@ -3,7 +3,7 @@
 
 Every ANSI sequence begins with the **escape code**, a sequence indicating to the terminal that the next characters it receives will be an ANSI code.
 
-Some escape codes are \x1b, \033, or \u001b, depending on if you’re using hexadecimal, octal, or unicode (two byte Unicode character 00 1B). 
+Some escape codes are \x1b, \033, or \u001b, depending on if you’re using hexadecimal, octal, or unicode. 
 
 The ANSI codes for color work as follows:
 
