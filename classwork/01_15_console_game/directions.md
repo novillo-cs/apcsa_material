@@ -1,8 +1,29 @@
 ## Console Game
 
+### Requirements
+
+1. Inheritance
+ 
+**Why inheritance?**
+
+When building a game with multiple player types, you'll notice they share common characteristics: name, hp, number of turns, etc. But how they make moves differs completely. 
+
+That is why inheritance will play an a important role in this project because it your classes share structure, but the behavior is different.
+
+You must declare your superclass as an **abstract class**.
+
+2. Let's make your game come to life!!! 💥💥💥
+   
+[ANSI Colors](https://github.com/novillo-cs/apcsa_material/blob/main/lessons/35_ansi_colors.md)
+
+3. This is a pair project. Your partner will be the student sitting next to you.
+
+---
+
 ### Day 1
 
-* This project must be saved in your assignments repo => `.../APCSA1/apcsa-assignments-fall-YourUsername/classwork/01_15_console_game/`
+* Submit your plan on GoogleClassroom. 
+* Ready to code? Save your work here: `.../APCSA1/apcsa-assignments-fall-YourUsername/classwork/01_15_console_game/`
 * Design a game where a player can have a different job/role.
 * Choosing a different job will alter how the player can play the game and what specific things they can do.
 * All kinds of players will have some common characteristics. Having a common class will help to represent this behavior.
@@ -40,16 +61,17 @@ Are we going to use the superclass to instantiate objects?
 
 ### Let's start
 
-* Use the code provided for the superclass Adventurer.
-* Implement one subclass of Adventurer and test it with a driver. You must implement all abstract methods.
+* Use the provided code for the Adventurer superclass. You may modify it as needed to better fit your game.
+* Implement one subclass of Adventurer and test it using a driver program. You must implement all required abstract methods. You may use the provided Warrior class as inspiration.
 * In the driver, the player should be declared as Adventurer and instantiated as the subclass (Adventurer player1 = new Warrior("Bob", 10);).
 * Your player has some HP (health points) values at the beginning of the game.
 * Your attack/support/special methods return Strings because you want the option of printing the text of what happened.
 
+---
 
 ### Day2
 
-* Look at the sample subclass MyWarrior and compare it to your subclass. What is different? What is the same?
+* Look at the sample subclass Warrior and compare it to your subclass. What is different? What is the same?
 
 * How your game will interact with the user?
   
