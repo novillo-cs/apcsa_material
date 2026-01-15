@@ -62,8 +62,8 @@ Are we going to use the superclass to instantiate objects?
 ### Let's start
 
 * Use the provided code for the Adventurer superclass. You may modify it as needed to better fit your game.
-* Implement one subclass of Adventurer and test it using a driver program. You must implement all required abstract methods. You may use the provided Warrior class as inspiration.
-* In the driver, the player should be declared as Adventurer and instantiated as the subclass (Adventurer player1 = new Warrior("Bob", 10);).
+* Implement one subclass of Adventurer and test it using a driver program. You must implement all required abstract methods. You may use the provided MyWarrior class as inspiration.
+* In the driver, the player should be declared as Adventurer and instantiated as the subclass (Adventurer player1 = new MyWarrior("Bob", 10);).
 * Your player has some HP (health points) values at the beginning of the game.
 * Your attack/support/special methods return Strings because you want the option of printing the text of what happened.
 
@@ -71,7 +71,7 @@ Are we going to use the superclass to instantiate objects?
 
 ### Day2
 
-* Look at the sample subclass Warrior and compare it to your subclass. What is different? What is the same?
+* Look at the sample subclass MyWarrior and compare it to your subclass. What is different? What is the same?
 
 * How your game will interact with the user?
   
