@@ -61,7 +61,7 @@ public static final String CLEAR_SCREEN =  "\u001b[2J";
 
 public static final String HIDE_CURSOR =  "\u001b[?25l";
 
-[More Info](https://en.wikipedia.org/wiki/ANSI_escape_code)
-
 public static final String SHOW_CURSOR =  "\u001b[?25h";
 ```
+
+[More Info](https://en.wikipedia.org/wiki/ANSI_escape_code)
