@@ -2,7 +2,7 @@
 
 ### Day 1
 
-* This project must be saved in your assignments repo => `.../APCSA1/apcsa-assignments-fall-YourUsername/classwork/01_14_console_game/`
+* This project must be saved in your assignments repo => `.../APCSA1/apcsa-assignments-fall-YourUsername/classwork/01_15_console_game/`
 * Design a game where a player can have a different job/role.
 * Choosing a different job will alter how the player can play the game and what specific things they can do.
 * All kinds of players will have some common characteristics. Having a common class will help to represent this behavior.
