@@ -56,3 +56,69 @@ Respond to the questions here:  `.../APCSA2/apcsa-assignments-spring-YourUsernam
 Write the pseudocode here:  `.../APCSA2/apcsa-assignments-spring-YourUsername/classwork/02_09_NQueens/pseudocode.txt (or md, docx, pdf)`
 
 Write and test the functions here:  `.../APCSA2/apcsa-assignments-spring-YourUsername/classwork/02_09_NQueens/NQueens.java`
+
+## Day 2
+
+### Implementation
+
+- Create a class NQueens (NQueens.java)
+- There must be an instance variable board[][] which is a 2D array of integers.
+- A queen should be represented with a -1.
+- Squares that are not safe to place a queen must be represente with the number of queens threatening the square.
+- Calculate squares that are not safe below each queen.
+- Write methods addQueen and removeQueen
+- Create a Driver.java to test your methods.
+
+```
+Given: int[][] board = new int[4][4];
+
+addQueen(0,0);
+
+[-1 0 0 0]
+[ 1 1 0 0]
+[ 1 0 1 0]
+[ 1 0 0 1]
+
+```
+
+
+```
+addQueen(1,2);
+
+[-1 0  0 0]
+[ 1 1 -1 0]
+[ 1 1  2 1]
+[ 2 0  1 1]
+
+```
+
+- Write the method toString()
+
+```
+/**
+*@return The output string formatted as follows:
+*All numbers that represent queens are replaced with 'Q'
+*all others are displayed as underscores '_'
+*There are spaces between each symbol:
+_ _ Q _
+Q _ _ _
+_ _ _ Q
+_ Q _ _
+*/
+public String toString(){}
+```
+
+## Recursive Methods
+
+You must implement a method ```solve(int row)``` that returns false when the board cannot be solved and leaves the board filled with zeros. It returns true when the board can be solved, and leaves the board in a solved state.
+
+You must have a ```solve()``` wrapper method that calls ```solve(0)``` to start the recursion on the starting row. (Your recursion increments the row).
+
+A wrapper method is used to support recursion. This method will not actually perform recursion but will call one that does. The wrapper method may: Validate parameters.
+
+You must clear the board before attempting to solve.
+
+You must implement a method ```countSolutions(int row)``` that returns the total number of solutions found.
+
+You must have a ```countSolutions()``` wrapper method that calls ```countSolutions(0)``` to start the recursion on the starting row. (Your recursion increments the row).
+
