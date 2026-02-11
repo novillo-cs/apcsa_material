@@ -120,5 +120,99 @@ You must clear the board before attempting to solve.
 
 You must implement a method ```countSolutions(int row)``` that returns the total number of solutions found.
 
+## Day 3
+
+### Animation (Optional)
+
+Animation is optinal for this lab.
+
+Add the following instance variables and methods to your file:
+
+```private boolean animated``` => It is false by default, but when it changes to true solve will print the animation. Otherwise, nothing will be printed.
+
+```private int delay``` => It is the wait time in your animation. The default value is 1000.
+
+```public void setAnimate(boolean newValue)``` => It sets the animated variable to the newValue received as parameter.
+
+```public void setDelay(int newValue)``` => It sets the delay variable to the newValue received as parameter. Any value less than 0 should set to 0.
+
+#### Part 1
+
+- You will need the Text.java file provided.
+
+- Add the following code after a queen has been successfully added. You may also add it after removing a queen:
+
+```
+if(animated){
+  Text.go(1,1);
+  System.out.println(this);
+  Text.wait(delay);
+}
+```
+
+- Add the following code in your main:
+
+```
+NQueens queens = new NQueens(8);
+queens.setAnimate(true);
+System.out.println(Text.CLEAR_SCREEN);
+System.out.println(Text.HIDE_CURSOR);
+Text.go(1,1);
+queens.solve()
+System.out.println(Text.RESET);
+```
+
+### Part 2
+
+Add the board size and the wait time for animation as arguments when running your NQueens program.
+
+**Examples:**
+
+```java Driver``` It will solve and print the solution to an 8x8 board.
+
+```java Driver 4``` It will solve and print the solution to a 4x4 board.
+
+```java Driver 5 1000``` It will animate the solving of a 5x5 board.
+
+How to use it:
+
+```
+int size = 8;
+
+if(args.length > 0){
+  size = Integer.parseInt(args[0]);
+}
+NQueens queens = new NQueens(size);;
+if(args.length > 1){
+  queens.setAnimate(true);
+  queens.setDelay(Integer.parseInt(args[1]));
+}
+System.out.println(Text.CLEAR_SCREEN);
+System.out.println(Text.HIDE_CURSOR);
+Text.go(1,1);
+queens.solve();
+System.out.println(Text.RESET);
+Text.go(1,1);
+System.out.println(queens);
+```
+
+Number of solutions for N Queens
+
+N | Solutions
+------------- | -------------
+1  | 1
+2  | 0
+3  | 0
+4  | 2
+5  | 10
+6  | 4
+7  | 40
+8  | 92
+9  | 352
+10  | 724
+
+
+
+
 You must have a ```countSolutions()``` wrapper method that calls ```countSolutions(0)``` to start the recursion on the starting row. (Your recursion increments the row).
 
