@@ -120,6 +120,8 @@ You must clear the board before attempting to solve.
 
 You must implement a method ```countSolutions(int row)``` that returns the total number of solutions found.
 
+You must have a ```countSolutions()``` wrapper method that calls ```countSolutions(0)``` to start the recursion on the starting row. (Your recursion increments the row).
+
 ## Day 3
 
 ### Animation (Optional)
@@ -214,5 +216,4 @@ N | Solutions
 
 
 
-You must have a ```countSolutions()``` wrapper method that calls ```countSolutions(0)``` to start the recursion on the starting row. (Your recursion increments the row).
 
