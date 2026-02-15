@@ -16,7 +16,9 @@ public class TwoDArrayPractice
     */
   public static void rowSwap(int[][] array, int rowAIndex, int rowBIndex)
     {
-        // Yor code here
+       new int[] temp = array[rowAIndex];
+          array[rowAIndex] = array[rowBIndex];
+        array[rowBIndex] = temp;
     }
 
   
@@ -25,7 +27,9 @@ public class TwoDArrayPractice
      */
     public static void colSwap(int[][] array, int colAIndex, int colBIndex)
     {
-        // Your code her
+         new int[] temp2 = array[rowAIndex];
+          array[rowAIndex] = array[rowBIndex];
+        array[rowBIndex] = temp2;
     }
 
   
@@ -56,7 +60,20 @@ public class TwoDArrayPractice
      */
     public static String[][] fillRows(String str, int rows, int cols)
     {
-        return null; // replace this with your 2D array
+            String[][] array = new String[rows][cols];
+ int index = 0;
+
+        for (int i = 0; i < rows; i++)
+      {
+    for (int j = 0; j < cols; j++)
+        {
+                    if (index < str.length())
+          {
+        array[i][j] = str.substring(index, index + 1);
+            index++; }
+              else {
+array[r][c] = null;} }}
+      return array;
     }
   
 }    
