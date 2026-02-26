@@ -123,6 +123,6 @@ if (animate) {
 #### Color your output with this command
 
 ```
-java Driver | sed -e 's/#/\x1b[47;39m#\x1b[39;49m/g' -e 's/@/\x1b[33m@\x1b[39;49m/g' -e 's/\./\x1b[49;32m\.\x1b[39;49m/g'
+java MazeDriver | sed -e 's/#/\x1b[47;39m \x1b[0m/g' -e 's/@/\x1b[42m \x1b[0m/g' -e 's/\./\x1b[41m\ \x1b[0m/g'
 ```
 
