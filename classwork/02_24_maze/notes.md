@@ -120,3 +120,9 @@ if (animate) {
     wait(200);
 }
 
+#### Color your output with this command
+
+```
+java Driver | sed -e 's/#/\x1b[47;39m#\x1b[39;49m/g' -e 's/@/\x1b[33m@\x1b[39;49m/g' -e 's/\./\x1b[49;32m\.\x1b[39;49m/g'
+```
+
