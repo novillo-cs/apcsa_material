@@ -106,3 +106,17 @@ The recursive solve method takes a row and col position.
 - All visited spots that are part of the solution are changed to '@'
 
 
+## Day 3
+
+#### Animation
+
+When you modify the maze by adding '@' and '.', you may add the following code:
+
+```
+if (animate) {
+    gotoTop();
+    clearTerminal();
+    System.out.println(this);
+    wait(200);
+}
+
