@@ -119,6 +119,7 @@ if (animate) {
     System.out.println(this);
     wait(200);
 }
+```
 
 #### Color your output with this command
 
