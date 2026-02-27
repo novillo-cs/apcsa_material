@@ -145,17 +145,10 @@ For example, you may:
 - Generate a random array cosidering 4 possible moves and loop through that array. 
 - Generate an array with 4 posible moves, and remove those in a random order.
 
-#### Why check adjacent spaces?
-
-If a cell has 2+ adjacent spaces, carving it would merge two paths into a wide open area. This check keeps all paths exactly 1 cell wide — a proper maze.
-
 #### Why randomize directions?
 
 Without randomization, the algorithm always goes in the same order (e.g., UP first), creating predictable, boring mazes. Shuffling directions creates unique mazes every time.
 
-#### How does backtracking work?
-
-When all 4 directions from a cell are blocked (border, space, or too many adjacent spaces), the recursion returns to the previous cell and tries its next untried direction.
 
 ```
 public Maze(int rows, int cols){
@@ -193,3 +186,13 @@ public void carveMaze(int row, int col) {
   // For each direction randomly selected => call carveMaze in that direction
 }
 ```
+
+
+#### Why check adjacent spaces?
+
+If a cell has 2+ adjacent spaces, carving it would merge two paths into a wide open area. This check keeps all paths exactly 1 cell wide — a proper maze.
+
+
+#### How does backtracking work?
+
+When all 4 directions from a cell are blocked (border, space, or too many adjacent spaces), the recursion returns to the previous cell and tries its next untried direction.
