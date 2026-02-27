@@ -126,3 +126,70 @@ if (animate) {
 ```
 java Driver | sed -e 's/#/\x1b[47;39m#\x1b[39;49m/g' -e 's/@/\x1b[33m@\x1b[39;49m/g' -e 's/\./\x1b[41m \x1b[0m/g'
 ```
+
+## Day 4 
+
+#### Carve a maze
+
+Given a maze with only walls. You must carve a sequence of paths. Please follow these directions:
+
+- Add a new constructor to your Maze.java, where you create a maze with only walls.
+- Your constructor call the method carveMaze(row, column) and then place one 'S' and one 'E'.
+
+**How to carve the maze?**
+
+You must randomize the moves in the different directions, but you should not use the same directions twice.
+
+For example, you may:
+
+- Generate a random array cosidering 4 possible moves and loop through that array. 
+- Generate an array with 4 posible moves, and remove those in a random order.
+
+#### Why check adjacent spaces?
+
+If a cell has 2+ adjacent spaces, carving it would merge two paths into a wide open area. This check keeps all paths exactly 1 cell wide — a proper maze.
+
+#### Why randomize directions?
+
+Without randomization, the algorithm always goes in the same order (e.g., UP first), creating predictable, boring mazes. Shuffling directions creates unique mazes every time.
+
+#### How does backtracking work?
+
+When all 4 directions from a cell are blocked (border, space, or too many adjacent spaces), the recursion returns to the previous cell and tries its next untried direction.
+
+```
+public Maze(int rows, int cols){
+  maze = new char[rows][cols];
+  for(char[]row:maze){
+    for(int i = 0; i < row.length;i++){
+      row[i]='#';
+    }
+  }
+  carveMaze();
+  addSE();
+}
+
+
+public void addSE() {
+  // Place S and E randomly in an empty spot
+}
+
+
+/* Recursion will end when there are no more valid directions left to explore
+ * from the current position ensuring that dead ends are reached.
+ */
+
+public void carveMaze() {
+  carveMaze(1, 1)
+}
+
+public void carveMaze(int row, int col) {
+  // Base Case
+  // if (row, col) is a border, space or it has more than 1 adjacent spot with spaces => return
+
+  // Recursive Case
+  // Change spot at (row, col) to a space
+  // Define an array or ArrayList with directions
+  // For each direction randomly selected => call carveMaze in that direction
+}
+```
