@@ -141,10 +141,68 @@ BFS will explore all areas in the order of distance from the start, so far away 
     
 ![image](./bfs.gif)
 
-
-
 You will most likely need to add a few extra instance variables to make this simulation work in a reasonable amount of time. However, do not add too many, keep it simple. When you do this, feel free to update the constructor and other methods accordingly.
 
 Once this works, you can use your working simulation to determine the behavior of the fire on different densities.
 
 Day 2 - Save your work here: ```.../APCSA2/apcsa-assignments-spring-YourUsername/classwork/03_31_burning_trees_frontier/```
+
+
+
+### Day 3
+
+You have already built a forest fire simulator. The forest is represented as a grid where each cell is either a tree, empty space, fire, or ash. Fire starts on the left column and spreads to neighboring trees one tick at a time. The simulation ends when no fires remain.
+
+Today's task: you will extend the simulator with a new method, then use it to collect data, analyze it, and writer conclusions about how tree density affects how fire spreads.
+
+### 1. New Method:
+
+Add the following method to BurnTrees.java: 
+
+public boolean crossedEntireForest(): This method must return true if the fire reached the rightmost column of the grid, and false otherwise. You may implement this in one of two ways:
+
+
+Option A: After the simulation ends, loop through every cell in the rightmost column. If any cell is ASH, return true.
+
+Option B: Add a boolean instance variable. Inside tick(), set it to true the moment any cell in the rightmost column catches fire.
+
+```
+BurnTrees b = new BurnTrees(1000, 1000, 0.6);
+int time = b.run();
+boolean crossed = b.crossedEntireForest();
+```
+
+### 2. Collect data
+
+Use run() and crossedEntireForest() to run repeated simulations and collect statistics. Write a loop in main() (or a separate helper method) that runs the simulation 100 times for a given density and board size, then computes:
+
+Average normalized burn time: total ticks across all runs ÷ number of runs ÷ n (where n is the board width)
+
+Crossed forest probability: number of runs where crossedEntireForest() returned true ÷ total runs
+
+Run your test using a 1000×1000 board, and another one using  a 100×100 board. Use the same densities for the 2 test.
+
+Complete the following table, and same it in a results.md file (or txt, docx, pdf):
+
+<img width="369" height="178" alt="image" src="https://github.com/user-attachments/assets/c00db832-ce2e-4fb9-a63e-842001177826" />
+
+### 3. Zoomed-In Table (1000×1000 board)
+
+Look at the previous results and identify the density range where normalized burn time is highest. Run a new set of experiments zoomed into that range, using finer density steps.
+
+Requirements:
+
+- Your highest data point must not be the first or last row. It must be clearly in the middle, proving you found a local maximum and not just an edge.
+
+- Include enough data points that the peak and the decline on both sides are clearly visible
+
+### 4. Analysis
+
+- In your results.md file, below your tables, write a response to each of the following. A few sentences each is fine, but be specific and reference your data.
+
+- How did you choose your zoom range for Part 3? What did the first table tell you, and how did you decide where to zoom in?
+
+- What do your results tell you about the effect of density on burn time? Describe what happens at low density, high density, and in between. Where is the peak, and why does it occur there?
+
+- What are the real-world implications for forest management? Think about what density represents in a real forest and what it would mean to control it. You may do a small amount of outside research if you wish.
+
