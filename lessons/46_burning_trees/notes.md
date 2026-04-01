@@ -184,7 +184,8 @@ Run your test using a 1000×1000 board, and another one using  a 100×100 board.
 
 Complete the following table, and same it in a results.md file (or txt, docx, pdf):
 
-<img width="369" height="178" alt="image" src="https://github.com/user-attachments/assets/c00db832-ce2e-4fb9-a63e-842001177826" />
+<img width="369" height="178" alt="image" src="https://github.com/user-attachments/assets/0b0027b2-ab1d-4142-9d53-1fa6155b889a" />
+
 
 ### 3. Zoomed-In Table (1000×1000 board)
 
