@@ -13,8 +13,8 @@ void draw(){
   avatar();
   x++;
   y++;
-  //avatar(x+100,y+100);
 }
+
 void avatar(){
 
   // left arm
