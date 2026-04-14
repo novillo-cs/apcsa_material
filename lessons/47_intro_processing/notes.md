@@ -2,6 +2,8 @@
 
 Processing is a programming language based on Java.
 
+# Day 1
+
 ## Running Processing
 
 In the lab: Open a terminal, type processing and press enter.
@@ -84,3 +86,44 @@ void setup(){
   ellipse(500, 400, 100, 100);
 }
 ```
+
+## Day 2
+
+### keyPressed() 
+
+This function is called once every time a key is pressed. The **key** that was pressed is stored in the key variable. 
+
+The variable **key** always contains the value of the most recent key on the keyboard that was used.
+
+**Example:**
+
+```
+void keyPressed() {
+  if (key == 'w') {
+    println("w");
+  }
+  else if (key == 's') {
+    println("s");
+  }
+  else if (key == 'a') {
+    println("a");
+  }
+  else if (key == 'd') {
+    println("d");
+  }
+}
+```
+**What about special keys?**
+
+The variable keyCode is used with special keys:  UP, DOWN, LEFT, RIGHT arrow keys and ALT, CONTROL, SHIFT.
+
+```
+void keyPressed() {
+  if (keyCode == UP) {
+    println("UP Arrow");
+  } else if (keyCode == DOWN) {
+    println("DOWN Arrow");
+  } 
+}
+```
+
