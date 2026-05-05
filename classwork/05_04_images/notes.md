@@ -1,6 +1,6 @@
 Use the left and right arrow keys to navigate between different kernels and display the name of the currently applied kernel.
 
-'m'''
+```
   currentKernel = 0;
   names = new String[]{
     "Identity", "Blur", "Sharpen",
@@ -50,4 +50,4 @@ Use the left and right arrow keys to navigate between different kernels and disp
       {0, 1, 2}
     })
   };
-}'''
+}```
